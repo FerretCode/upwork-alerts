@@ -54,7 +54,7 @@ async def parse_jobs():
                 continue
 
             try:
-                await bot.send_alert(title_str, description_str, url)
+                await bot.send_alert(title_str, description_str, "https://upwork.com"+url)
             except Exception as e:
                 print(e)
                 continue
